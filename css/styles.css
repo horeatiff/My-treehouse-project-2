@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  background-color: rgb(241, 240, 240);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  background-color: rgb(241, 241, 240);
+  padding: 25px;
+}
+
+h1,
+.top-nav {
+  text-align: center;
+}
+
+.top-nav,
+.top-nav li {
+  width: 100%;
+}
+
+h1 a,
+.top-nav a {
+  color: LightSeaGreen;
+}
+
+.top-nav {
+  margin-top: 30px;
+}
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.top-nav a {
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Exo 2", sans-serif;
+  padding: 25px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  background-color: #fff;
+  text-align: center;
+}
+
+.desc-container {
+  background-color: rgb(241, 240, 240);
+  padding: 25px;
+}
+
+.desc-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.cont-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.desc-txt {
+  font-family: "Exo 2", sans-serif;
+  margin: 5%;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.col {
+  font-family: "Exo 2", sans-serif;
+  margin: 10px;
+  min-height: 250px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  padding-top: 5px;
+}
+
+.box-1 {
+  background-color: white;
+}
+
+.box-2 {
+  background-color: white;
+}
+
+.box-3 {
+  background-color: white;
+}
+
+.box-4 {
+  background-color: white;
+}
+
+.box-5 {
+  background-color: white;
+}
+
+.box-6 {
+  background-color: white;
+}
+
+.main-footer {
+  font-family: "Exo 2", sans-serif;
+  margin-top: 20px;
+  padding: 25px;
+  text-align: center;
+  background-color: rgb(241, 240, 240);
+  color: LightSeaGreen;
+}
+
+.bottom-txt {
+  font-family: "Montserrat", sans-serif;
+  padding: 25px;
+  border-top: 1px inset rgb(190, 185, 185);
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.txt1 {
+  display: inline-flex;
+  flex-grow: 4;
+}
+
+.txt2 {
+  display: none;
+}
+
+.txt3 {
+  display: none;
+}
+
+.txt4 {
+  display: none;
+}
+
+.txt5 {
+  display: none;
+}
+
+.txt6 {
+  display: inline-flex;
+}
+
+@media (min-width: 768px) {
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    background-color: rgb(241, 240, 240);
+    padding-top: 20px;
+  }
+
+  .top-nav li {
+    text-align: center;
+    background-color: rgb(241, 240, 240);
+    margin: 0;
+    padding: 0px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .txt2 {
+    display: inline-flex;
+    flex-grow: 0.1;
+  }
+
+  .txt3 {
+    display: inline-flex;
+    flex-grow: 0.1;
+  }
+
+  .txt4 {
+    display: inline-flex;
+    flex-grow: 0.1;
+  }
+
+  .txt5 {
+    display: inline-flex;
+  }
+
+  .txt6 {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav,
+  h1 {
+    display: flex;
+    width: 100%;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    background-color: rgb(241, 240, 240);
+    margin: 0;
+  }
+
+  .top-nav {
+    display: flex;
+    width: 50%;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    background-color: rgb(241, 240, 240);
+    margin: 0;
+    padding: 5px;
+  }
+
+  .top-nav li {
+    background-color: rgb(241, 240, 240);
+    margin: 0;
+    padding: 0px;
+  }
+
+  .desc-container {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(241, 240, 240);
+    padding: 25px;
+  }
+
+  .desc-img {
+    margin-left: auto;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .desc-txt {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: justify;
+    padding-bottom: 0px;
+  }
+
+  .col {
+    flex-basis: calc(33.333% - 20px);
+  }
+
+  .txt2 {
+    display: inline-flex;
+    flex-grow: 0.1;
+  }
+
+  .txt3 {
+    display: inline-flex;
+    flex-grow: 0.1;
+  }
+
+  .txt4 {
+    display: inline-flex;
+    flex-grow: 0.1;
+  }
+
+  .txt5 {
+    display: inline-flex;
+  }
+
+  .txt6 {
+    display: none;
+  }
+}
